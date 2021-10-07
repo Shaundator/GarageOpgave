@@ -1,25 +1,22 @@
 package Projekt;
 
 public class Elbil extends Bil {
-    double batterikapacitetkWh;
-    double maxKm;
-    double whPrKm;
+    private double batterikapacitetkWh;
+    private double maxKm;
+    private double whPrKm;
 
-    public Elbil(String regNr, String mærke, String model, String årgang, int antalDøre, double batterikapacitetkWh, double maxKm, double whPrKm){
+    public Elbil(String regNr, String mærke, String model, int årgang, int antalDøre, double batterikapacitetkWh, double maxKm, double whPrKm){
         super(regNr, mærke, model, årgang, antalDøre);
         this.batterikapacitetkWh=batterikapacitetkWh;
         this.maxKm=maxKm;
         this.whPrKm=whPrKm;
     }
-
     public double getWhPrKmTokmPrL(){
         double result;
         result = (whPrKm/91.25);
         result = (result/100);
         return result;
     }
-
-
     @Override
     public double beregnGrønEjerafgift() {
         double kmPrL = getWhPrKmTokmPrL();

@@ -1,10 +1,10 @@
 package Projekt;
 
 public class Dieselbil extends Bil {
-    boolean harPartikelfilter;
-    double kmPrL;
+    private boolean harPartikelfilter;
+    private double kmPrL;
 
-    public Dieselbil(String regNr, String mærke, String model, String årgang, int antalDøre, boolean harPartikelfilter, double kmPrL){
+    public Dieselbil(String regNr, String mærke, String model, int årgang, int antalDøre, boolean harPartikelfilter, double kmPrL){
         super(regNr, mærke, model, årgang, antalDøre);
         this.harPartikelfilter=harPartikelfilter;
         this.kmPrL=kmPrL;
@@ -42,6 +42,6 @@ public class Dieselbil extends Bil {
     public String toString() {
         return super.toString() + "\nDieselbil" +
                 "\nPartikelfilter: " + harPartikelfilter +
-                "\nKmPrL=" + kmPrL;
+                "\nKmPrL: " + kmPrL;
     }
 }

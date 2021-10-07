@@ -9,12 +9,12 @@ public class Garage {
         biler.add(bil);
     }
 
-    public void beregnGrønAfgiftBilpark(){
+    public double beregnGrønAfgiftBilpark(){
         double result = 0;
         for(int i = 0; i < biler.size(); i++ ){
             result = result + biler.get(i).beregnGrønEjerafgift();
         }
-        System.out.println("Den samlede udgift er " + result + "kr.");
+        return result;
     }
 
 

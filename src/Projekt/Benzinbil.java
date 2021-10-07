@@ -1,14 +1,15 @@
 package Projekt;
 
 public class Benzinbil extends Bil {
-    int oktantal;
-    double kmPrL;
+    private int oktantal;
+    private double kmPrL;
 
-    public Benzinbil(String regNr, String mærke, String model, String årgang, int antalDøre, int oktantal, double kmPrL) {
+    public Benzinbil(String regNr, String mærke, String model, int   årgang, int antalDøre, int oktantal, double kmPrL) {
         super(regNr, mærke, model, årgang, antalDøre);
         this.oktantal = oktantal;
         this.kmPrL = kmPrL;
     }
+
 
 
     @Override

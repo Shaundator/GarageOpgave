@@ -1,13 +1,13 @@
 package Projekt;
 
 public abstract class Bil{
-    String regNr;
-    String mærke;
-    String model;
-    String årgang;
-    int antalDøre;
+    private String regNr;
+    private String mærke;
+    private String model;
+    private int årgang;
+    private int antalDøre;
 
-    public Bil(String regNr, String mærke, String model, String årgang, int antalDøre){
+    public Bil(String regNr, String mærke, String model, int årgang, int antalDøre){
         this.regNr=regNr;
         this.mærke=mærke;
         this.model=model;
